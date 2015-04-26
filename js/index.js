@@ -1,4 +1,4 @@
-global.resourcePublicPath = global.resourcePublicPath || 'https://dl.dropboxusercontent.com/u/6589453/book/app/';
+global.resourcePublicPath = global.resourcePublicPath || 'http://jhudson8.github.io/choyoadv/';
 __webpack_public_path__ = global.resourcePublicPath;
 
 var React = require('react');
