@@ -1,4 +1,4 @@
-global.resourcePublicPath = global.resourcePublicPath || 'http://jhudson8.github.io/choyoadv/';
+global.resourcePublicPath = global.resourcePublicPath || 'https://jhudson8.github.io/choyo/';
 __webpack_public_path__ = global.resourcePublicPath;
 
 var React = require('react');
