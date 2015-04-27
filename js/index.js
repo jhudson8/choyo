@@ -84,7 +84,7 @@ function init() {
     React.render(<Page handler={_spacer} context={context} navigator={navigate}/>, document.getElementById('book'));
     setTimeout(function() {
       React.render(<Page id={pageId} handler={handler} context={context} navigator={navigate}/>, document.getElementById('book'));
-    }, 400);
+    }, 250);
   }
 
   function navigate(route, options) {

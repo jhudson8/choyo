@@ -4,12 +4,12 @@ var Context = module.exports = function() {
   this._choices = [];
 };
 _.extend(Context.prototype, {
-  addTransition: function(id, label) {
-    this.page.addTransition(id, label);
+  addChoice: function(id, label) {
+    this.page.addChoice(id, label);
   },
 
-  removeTransition: function(id) {
-    this.page.removeTransition(id);
+  removeChoice: function(id) {
+    this.page.removeChoice(id);
   },
 
 

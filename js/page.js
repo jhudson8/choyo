@@ -129,11 +129,11 @@ module.exports = React.createClass({
     this.props.navigator('page/' + pageId, true);
   },
 
-  addTransition: function(id, label) {
+  addChoice: function(id, label) {
     this.state.addTransitions.push({id: id, label: label});
   },
 
-  removeTransition: function(id) {
+  removeChoice: function(id) {
     this.state.removeTransitions[id] = true;
   },
 
