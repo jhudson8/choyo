@@ -1,21 +1,26 @@
 {
-  "name": "treasure-hunt",
+  "name": "choyo",
   "version": "0.0.1",
-  "description": "treasure-hunt",
+  "description": "choyo",
   "scripts": {
     "test": "gulp test"
   },
   "keywords": [],
   "author": "Joe Hudson",
-  "dependencies": {
-    "classnames": "^1.2.0",
+  "peerDependencies": {
     "exoskeleton": "^0.7.0",
-    "image-webpack-loader": "^1.4.0",
-    "imagemin": "^3.1.0",
     "react": "~0.12",
     "underscore": "~1.7"
   },
+  "dependencies": {
+    "classnames": "^1.2.0"
+  },
   "devDependencies": {
+    "exoskeleton": "^0.7.0",
+    "react": "~0.12",
+    "underscore": "~1.7",
+    "imagemin": "^3.1.0",
+    "image-webpack-loader": "^1.4.0",
     "css-loader": "~0.9",
     "extract-text-webpack-plugin": "^0.5.0",
     "file-loader": "~0.7",
