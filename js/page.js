@@ -27,7 +27,7 @@ module.exports = React.createClass({
     if (!_.isString(content)) {
       if (content.call) {
         // it's a function
-        content = handler.content.call(context);
+        content = handler.content.call(context, React);
       } else {
         content = 'FIX ME: Invalid "content" attribute - it needs to be wrapped in function() { return... });';
       }
