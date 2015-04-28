@@ -36,8 +36,11 @@ function checkForBook() {
     },
 
     currentPage: function() {
-      debugger;
-      engine.currentPage(book, context || Context.restore(), navigate);
+      var context = context || Context.restore();
+      if (!context.pageId || context.pageId === 'undefined') {
+        context = undefined;
+      }
+      engine.currentPage(book, context, navigate);
     }
   });
   new Router();

@@ -35,10 +35,7 @@ function startBook(book, context, navigate) {
 
 function currentPage(book, context, navigate) {
   if (!context) {
-    context = Context.restore();
-    if (!context || !context._pageId) {
-      return navigate('book', true);
-    }
+    return navigate('book', true);
   }
   navigate('page/' + context._pageId, {replace: true, trigger: true});
 }
