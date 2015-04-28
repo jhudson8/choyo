@@ -49,6 +49,9 @@ _.extend(Context.prototype, {
   },
   
   save: function() {
+    if (!this.pageId) {
+      return;
+    }
     try {
       var out = {};
       _.each(this, function(value, key) {

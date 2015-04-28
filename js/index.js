@@ -17,7 +17,6 @@ function checkForBook() {
   }
 
   book = window.book(React);
-  context = engine.reset(book);
 
   document.body.innerHTML = '<div id="book" class="book"></div>';
   var Router = Backbone.Router.extend({
@@ -27,16 +26,18 @@ function checkForBook() {
       '': 'currentPage'
     },
 
-    showPage: function(pageId) {
-      engine.showPage(pageId, book, context, navigate);
+    showPage: function(pageId) { 
+      engine.showPage(pageId, book, context || Context.restore(), navigate);
     },
 
     startBook: function() {
+      context = engine.reset(book);
       context = engine.startBook(book, context, navigate);
     },
 
     currentPage: function() {
-      engine.currentPage(book, context, navigate);
+      debugger;
+      engine.currentPage(book, context || Context.restore(), navigate);
     }
   });
   new Router();
