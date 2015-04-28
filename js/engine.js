@@ -1,9 +1,6 @@
 global.resourcePublicPath = global.resourcePublicPath || 'https://jhudson8.github.io/choyo/';
 __webpack_public_path__ = global.resourcePublicPath;
 
-var React = require('react');
-var Backbone = require('backbone');
-var _ = require('underscore');
 var Context = require('./context');
 require('../styles/style.css');
 

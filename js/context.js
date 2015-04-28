@@ -1,5 +1,3 @@
-var _ = require('underscore');
-
 var Context = module.exports = function() {
   this._choices = [];
 };
