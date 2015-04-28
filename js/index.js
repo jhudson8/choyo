@@ -37,7 +37,7 @@ function checkForBook() {
 
     currentPage: function() {
       var context = context || Context.restore();
-      if (!context.pageId || context.pageId === 'undefined') {
+      if (!context || !context.pageId || context.pageId === 'undefined') {
         context = undefined;
       }
       engine.currentPage(book, context, navigate);
